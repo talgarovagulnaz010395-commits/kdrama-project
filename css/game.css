@@ -165,7 +165,7 @@ input:focus {
 
 
 .guess-game {
-    background: #fff;
+    background: #1b1920;
     width: 90%;
     max-width: 500px;
     margin: 30px auto;
@@ -202,7 +202,7 @@ input:focus {
 #timer {
     margin: 10px 0;
     font-weight: bold;
-    color: #333;
+    color: #fd6895;
 }
 
 /* Поле ввода */
