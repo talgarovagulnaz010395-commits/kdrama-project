@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #21202a;
+    color: #fd6895;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.header {
+    background: #302f3f;
+    padding: 25px 0;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fd6895;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff8ab3;
+}
+
+
+.pill-btn {
+    padding: 10px 22px;
+    border-radius: 30px;
+    border: 2px solid #fd6895;
+    background: transparent;
+    color: #fd6895;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pill-btn:hover {
+    background: #fd6895;
+    color: #fff;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal[aria-hidden="false"] {
+    display: flex;
+}
+
+.modal-panel {
+    width: 100%;
+    max-width: 980px;
+    background: linear-gradient(180deg, #1f1e27 0%, #23222b 100%);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+    position: relative;
+}
+
+
+.modal-left {
+    flex: 0 0 42%;
+    min-width: 260px;
+    background: #1b1920;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.modal-right {
+    flex: 1;
+    padding: 28px 32px;
+    color: #ffdfe9;
+}
+
+.modal-right h2 {
+    margin: 0 0 6px;
+    color: #ff9fc3;
+    font-size: 24px;
+}
+
+.modal-right .muted {
+    color: #dfb6c7;
+    margin-bottom: 18px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+form label span {
+    display: block;
+    font-size: 13px;
+    color: #e8c9d6;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.02);
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    transition: box-shadow .15s, border-color .15s;
+}
+
+input:focus {
+    border-color: #ff6ea0;
+    box-shadow: 0 4px 18px rgba(253,104,149,0.12);
+}
+
+/* checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.checkbox input { width: 16px; height: 16px; }
+
+.error {
+    display: block;
+    height: 18px;
+    margin-top: 6px;
+    color: #ffb3c9;
+    font-size: 13px;
+}
+
+.success {
+    margin-top: 14px;
+    padding: 12px;
+    background: rgba(102, 255, 180, 0.08);
+    color: #c7ffd7;
+    border-radius: 8px;
+}
+
+/* кнопки */
+.form-actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+}
+
+.btn-outline {
+    padding: 10px 18px;
+    background: transparent;
+    color: #ff9fc3;
+    border: 1px solid rgba(255,159,195,0.25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-full {
+    padding: 11px 18px;
+    background: linear-gradient(90deg,#ff7aa7,#ff5e8c);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.modal-close {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    background: transparent;
+    border: none;
+    color: #ffd6e7;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 880px) {
+    .modal-panel { flex-direction: column; max-width: 540px; }
+    .modal-left { flex-basis: auto; height: 170px; }
+    .modal-right { padding: 20px; }
+}
+
+
+footer {
+    background-color: #302f3f;
+    padding: 20px 0;
+    color: #000000;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%); /* делает иконки белыми */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #000000;
+}

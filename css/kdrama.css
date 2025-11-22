@@ -1,0 +1,51 @@
+.kdrama-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 36px;
+    font-family: "Arial", sans-serif;
+    color: #fd6895;
+}
+
+/* Контейнер списка */
+.kdrama-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Карточка */
+.kdrama-card {
+    background: #302f3f;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.kdrama-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+
+.kdrama-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Текст */
+.kdrama-card h3 {
+    margin-top: 12px;
+    font-size: 20px;
+    color: #ff7aa8;
+}
+
+.kdrama-card p {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #ffd4e5;
+}

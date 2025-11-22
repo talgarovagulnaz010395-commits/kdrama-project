@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Другие дорамы</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/kdrama.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="../images/logo%20(1).svg" alt="Logo">
+                </div>
+                <nav>
+                    <a href="../index.html">Главная</a>
+                    <a href="characters.html">Герои</a>
+                    <a href="story.html">Сюжет</a>
+                    <a href="game.html">Игра</a>
+                    <a href="kdrama.html">Другие дорамы</a>
+                </nav>
+                <button id="openRegister" class="pill-btn">Регистрация</button>
+                <div id="registerModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="regTitle">
+                    <div class="modal-panel" role="document">
+                        <button id="closeRegister" class="modal-close" aria-label="Закрыть форму">✕</button>
+                        <div class="modal-left">
+                            <img src="../images/art.webp" alt="Poster" />
+                        </div>
+
+                        <div class="modal-right">
+                            <h2 id="regTitle">Создать аккаунт</h2>
+                            <p class="muted">Присоединяйся к фан-клубу — оставляй отзывы и сохраняй списки.</p>
+
+                            <form id="registerForm" novalidate>
+                                <label>
+                                    <span>Имя</span>
+                                    <input type="text" id="name" name="name" required minlength="2" />
+                                    <small class="error" id="err-name"></small>
+                                </label>
+
+                                <label>
+                                    <span>Email</span>
+                                    <input type="email" id="email" name="email" required />
+                                    <small class="error" id="err-email"></small>
+                                </label>
+
+                                <label>
+                                    <span>Пароль</span>
+                                    <input type="password" id="password" name="password" required minlength="6" />
+                                    <small class="error" id="err-password"></small>
+                                </label>
+
+                                <label>
+                                    <span>Повторите пароль</span>
+                                    <input type="password" id="password2" name="password2" required />
+                                    <small class="error" id="err-password2"></small>
+                                </label>
+
+                                <label class="checkbox">
+                                    <input type="checkbox" id="agree" required />
+                                    <span>Согласен(а) с правилами сайта</span>
+                                    <small class="error" id="err-agree"></small>
+                                </label>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-full">Зарегистрироваться</button>
+                                    <button type="button" id="cancelRegister" class="btn-outline">Отмена</button>
+                                </div>
+
+                                <div id="formSuccess" class="success" role="status" aria-live="polite" hidden>
+                                    Спасибо! Регистрация прошла успешно.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="kdrama-title">Популярные дорамы</h2>
+
+<div class="kdrama-list" id="kdramaList"></div>
+
+<footer>
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="https://t.me/gulnaz2005" target="_blank" aria-label="Telegram">
+                <img src="../images/telegram.svg" alt="Telegram">
+            </a>
+            <a href="https://www.instagram.com/_tlgrvaa__" target="_blank" aria-label="Instagram">
+                <img src="../images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+                <img src="../images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.facebook.com/yourusername" target="_blank" aria-label="Facebook">
+                <img src="../images/facebook.svg" alt="Facebook">
+            </a>
+        </div>
+        <p class="footer-text">© 2025 Made by Gulnaz</p>
+    </div>
+</footer>
+
+<script src="../js/modal.js"></script>
+<script src="../js/kdrama.js"></script>
+</body>
+</html>
+
+</body>
+</html>

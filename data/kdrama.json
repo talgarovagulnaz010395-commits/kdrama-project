@@ -1,0 +1,60 @@
+{
+  "kdramas": [
+    {
+      "id": 1,
+      "title": "Хватай Сон Джэ и беги",
+      "year": 2024,
+      "genre": "Романтика, Фэнтези",
+      "image": "https://i.pinimg.com/736x/56/4b/31/564b3116db0974ba253b9a02567de074.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Суть идеального брака",
+      "year": 2023,
+      "genre": "Мелодрама",
+      "image": "https://i.pinimg.com/736x/cf/12/d2/cf12d2ce14aa8b5966c31cfb61c312bf.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Мерцающий арбуз",
+      "year": 2023,
+      "genre": "Фэнтези, Музыка",
+      "image": "https://dorama.land/uploads/generated/serials/1/v2/sverkayushchiy-arbuz-s.webp?v=3"
+    },
+    {
+      "id": 4,
+      "title": "Алхимия душ",
+      "year": 2022,
+      "genre": "Фэнтези, Экшен",
+      "image": "https://i.pinimg.com/1200x/b5/73/88/b573887833601593f1ab06b3d2ebc8bd.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Истинная красота",
+      "year": 2020,
+      "genre": "Школа, Романтика",
+      "image": "https://i.pinimg.com/1200x/3e/ec/29/3eec2909460ae50435c77fc46285522c.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Потомки солнца",
+      "year": 2016,
+      "genre": "Драма, Романтика",
+      "image": "https://dorama.land/uploads/generated/serials/0/v2/potomki-solnca-c.webp?v=1"
+    },
+    {
+      "id": 7,
+      "title": "Королева слёз",
+      "year": 2024,
+      "genre": "Романтика, Драма",
+      "image": "https://dorama.land/uploads/generated/serials/1/v2/koroleva-slez-t.webp?v=3"
+    },
+    {
+      "id": 8,
+      "title": "Любовь по контракту",
+      "year": 2023,
+      "genre": "Комедия, Романтика",
+      "image": "https://dorama.land/uploads/generated/serials/1/v2/lyubov-po-kontraktu-a.webp?v=1"
+    }
+  ]
+}

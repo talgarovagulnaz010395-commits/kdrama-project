@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Деловое предложение - Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/core.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <img src="images/logo%20(1).svg" alt="Logo">
+        </div>
+        <nav>
+          <a href="index.html">Главная</a>
+          <a href="pages/characters.html">Герои</a>
+          <a href="pages/story.html">Сюжет</a>
+          <a href="pages/game.html">Игра</a>
+          <a href="pages/kdrama.html">Другие дорамы</a>
+        </nav>
+        <button id="openRegister" class="pill-btn">Регистрация</button>
+        <div id="registerModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="regTitle">
+          <div class="modal-panel" role="document">
+            <button id="closeRegister" class="modal-close" aria-label="Закрыть форму">✕</button>
+            <div class="modal-left">
+              <img src="images/art.webp" alt="Poster" />
+            </div>
+
+            <div class="modal-right">
+              <h2 id="regTitle">Создать аккаунт</h2>
+              <p class="muted">Присоединяйся к фан-клубу — оставляй отзывы и сохраняй списки.</p>
+
+              <form id="registerForm" novalidate>
+                <label>
+                  <span>Имя</span>
+                  <input type="text" id="name" name="name" required minlength="2" />
+                  <small class="error" id="err-name"></small>
+                </label>
+
+                <label>
+                  <span>Email</span>
+                  <input type="email" id="email" name="email" required />
+                  <small class="error" id="err-email"></small>
+                </label>
+
+                <label>
+                  <span>Пароль</span>
+                  <input type="password" id="password" name="password" required minlength="6" />
+                  <small class="error" id="err-password"></small>
+                </label>
+
+                <label>
+                  <span>Повторите пароль</span>
+                  <input type="password" id="password2" name="password2" required />
+                  <small class="error" id="err-password2"></small>
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" id="agree" required />
+                  <span>Согласен(а) с правилами сайта</span>
+                  <small class="error" id="err-agree"></small>
+                </label>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn-full">Зарегистрироваться</button>
+                  <button type="button" id="cancelRegister" class="btn-outline">Отмена</button>
+                </div>
+
+                <div id="formSuccess" class="success" role="status" aria-live="polite" hidden>
+                  Спасибо! Регистрация прошла успешно.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-block">
+  <div class="container">
+    <div class="hero">
+      <div class="hero-poster right">
+        <img src="https://dorama.land/uploads/generated/serials/1/v2/delovoe-predlozhenie25-a.webp?v=3" alt="Постер дорамы">
+      </div>
+      <div class="main-info">
+        <div class="info-block">
+          <div class="info-grid">
+            <div>
+              <p class="label">MyDramaList:</p>
+              <p class="value">9.0</p>
+            </div>
+            <div>
+              <p class="label">Жанры:</p>
+              <p class="value">драма, комедия, романтика</p>
+            </div>
+            <div>
+              <p class="label">КиноПоиск:</p>
+              <p class="value">8.1</p>
+            </div>
+            <div>
+              <p class="label">Страна:</p>
+              <p class="value">Южная Корея</p>
+            </div>
+            <div>
+              <p class="label">IMDb:</p>
+              <p class="value">8.1</p>
+            </div>
+            <div>
+              <p class="label">Оригинальное название:</p>
+              <p class="value">사내 맞선</p>
+            </div>
+            <div>
+              <p class="label">Дата выхода:</p>
+              <p class="value">28 февраля 2022</p>
+            </div>
+            <div>
+              <p class="label">Количество серий:</p>
+              <p class="value">12</p>
+            </div>
+            <div>
+              <p class="label">Озвучка:</p>
+              <p class="value">SoftBox, Чёрный верес, рус. субтитры</p>
+            </div>
+            <div>
+              <p class="label">Длительность серии:</p>
+              <p class="value">1 час</p>
+            </div>
+            <div>
+              <p class="label">Актёры:</p>
+              <p class="value">Ким Се Чжон, Ан Хё Соп, Ким Мин Гю, Сол Ин А</p>
+            </div>
+            <div>
+              <p class="label">Режиссёр:</p>
+              <p class="value">Пак Сон Хо</p>
+            </div>
+            <div>
+              <p class="label">Канал:</p>
+              <p class="value">SBS</p>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button class="btn-outline" id="openTrailer">Трейлер</button>
+            <a href="pages/story.html" class="btn-full">Смотреть с 1 серии</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="why container">
+  <h2>Почему стоит посмотреть</h2>
+  <div class="grid-3">
+    <div class="card-small">
+      <h3>Тёплая история</h3>
+      <p>Много искренних и смешных моментов между героями.</p>
+    </div>
+    <div class="card-small">
+      <h3>Отличная актёрская игра</h3>
+      <p>Химия между персонажами заметна в каждой сцене.</p>
+    </div>
+    <div class="card-small">
+      <h3>Саундтрек</h3>
+      <p>Эмоциональная музыка подчёркивает основные события.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно -->
+<div id="trailerModal" class="modal">
+  <div class="modal-content">
+    <span id="closeTrailer" class="close-btn">&times;</span>
+    <iframe
+            id="trailerFrame"
+            width="100%"
+            height="415"
+            src="https://www.youtube.com/embed/M-PHcxPyasA?start=37"
+            title="Trailer"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<div class="slider_block">
+  <div class="container">
+    <div class="inner_slider">
+      <div class="slider">
+        <button class="btn-slide" id="prev">‹</button>
+
+        <div class="slide active_slide">
+          <div class="slide_card">
+            <img src="images/kdrama.webp" alt="">
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide_card">
+            <img src="images/business2.webp" alt="">
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide_card">
+            <img src="images/slider.webp" alt="">
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide_card">
+            <img src="images/slider1.webp" alt="">
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide_card">
+            <img src="images/slider4.webp" alt="">
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide_card">
+            <img src="images/slider3.webp" alt="">
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide_card">
+            <img src="images/slider2.webp" alt="">
+          </div>
+        </div>
+
+        <button class="btn-slide" id="next">›</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card_switcher">
+  <div class="container">
+    <h3>Card Switcher</h3>
+    <div class="inner_card_switcher">
+      <button class="btn" id="btn-prev">prev</button>
+      <div class="card"></div>
+      <button class="btn" id="btn-next">next</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <div class="social-icons">
+      <a href="https://t.me/gulnaz2005" target="_blank" aria-label="Telegram">
+        <img src="./images/telegram.svg" alt="Telegram">
+      </a>
+      <a href="https://www.instagram.com/_tlgrvaa__" target="_blank" aria-label="Instagram">
+        <img src="./images/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+        <img src="./images/twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://www.facebook.com/yourusername" target="_blank" aria-label="Facebook">
+        <img src="./images/facebook.svg" alt="Facebook">
+      </a>
+    </div>
+    <p class="footer-text">© 2025 Made by Gulnaz</p>
+  </div>
+</footer>
+
+<script src="./js/main.js"></script>
+<script src="./js/modal.js"></script>
+</body>
+</html>
